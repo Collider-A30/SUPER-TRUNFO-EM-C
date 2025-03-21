@@ -13,6 +13,40 @@ int main (){
     float densidadeinvert1, densidadeinvert2;
     float superpoder1, superpoder2;
     int resultado1, resultado2, resultado3, resultado4, resultado5, resultado6, resultado7;
+    int opcaoMenu;
+
+    printf("###SUPERTRUNFO###: \n");
+    printf("###MENU DO JOGO###: \n");
+    printf("1.Iniciar Jogo\n");
+    printf("2.Ver regras\n");
+    printf("3.Sair\n");
+    printf("Digite a opção desejada: \n");
+    scanf("%d", &opcaoMenu);
+
+    switch (opcaoMenu)
+    {
+    case 1:
+        printf("Iniciando o jogo...\n");
+        break;
+    
+    case 2:
+        printf("###REGRAS DO JOGO###\n");
+        printf("1. O jogo é composto por 2 jogadores.\n");
+        printf("2. Cada jogador recebe uma carta com informações sobre um estado.\n");
+        printf("3. Cada carta possui 6 atributos: população, área, PIB, pontos turísticos, densidade populacional e PIB per capita.\n");
+        printf("4. Cada jogador escolhe um atributo da sua carta para comparar com o atributo do adversário.\n");
+        printf("5. O jogador que tiver o atributo maior, ganha a rodada e fica com a carta do adversário.\n");
+        printf("6. O jogo termina quando um dos jogadores ficar sem cartas.\n");
+        break;
+
+        case 3: 
+        printf("Saindo do jogo...\n");
+        break;
+
+    default: 
+        printf("Opção inválida!\n");
+        break;
+    }
 
     //início do primeiro estado
     printf("Digite o nome do primeiro estado: \n");
