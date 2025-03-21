@@ -106,21 +106,57 @@ int main (){
 
     //Início da comparação das cartas
 
-    resultado1 = populacao1 > populacao2;
-    resultado2 = area1 > area2;
-    resultado3 = PIB1 > PIB2;
-    resultado4 = pontos1 > pontos2;
-    resultado5 = densidade1 > densidade2;
-    resultado6 = pibper1 > pibper2;
-    resultado7 = superpoder1 > superpoder2;
+    printf("###VAMOS VER QUEM GANHOU????###\n");
 
-    printf("População Carta 1 vs Carta 2 é: %d\n", resultado1);
-    printf("Área Carta 1 vs Carta 2 é: %d\n", resultado2);
-    printf("PIB Carta 1 vs Carta 2 é: %d\n", resultado3);
-    printf("Pontos Turísticos 1 vs Carta 2 é: %d\n", resultado4);
-    printf("Densidade 1 vs Carta 2 é: %d\n", resultado5);
-    printf("PIB per capita 1 vs Carta 2 é: %d\n", resultado6);
-    printf("Super poder Carta 1 vs Carta 2 é: %d\n", resultado7);
+    if (populacao1 > populacao2){
+        printf("A população da carta 1 é maior!\n");
+    } else if (populacao1 < populacao2){
+        printf("A população da carta 2 é maior!\n");
+    } else {
+        printf("Empate!\n");
+    }
+    if (area1 > area2){
+        printf("A área da carta 1 é maior!\n");
+    } else if (area1 < area2){
+        printf("A área da carta 2 é maior!\n");
+    } else {
+        printf("Empate!\n");
+    }
+    if (PIB1 > PIB2){
+        printf("O PIB da carta 1 é maior!\n");
+    } else if (PIB1 < PIB2){
+        printf("O PIB da carta 2 é maior!\n");
+    } else {
+        printf("Empate!\n");
+    }
+    if (pontos1 > pontos2){
+        printf("A quantidade de pontos turísticos da carta 1 é maior!\n");
+    } else if (pontos1 < pontos2){
+        printf("A quantidade de pontos turísticos da carta 2 é maior!\n");
+    } else {
+        printf("Empate!\n");
+    }
+    if (densidade1 > densidade2){
+        printf("A densidade populacional da carta 1 é maior!\n");
+    } else if (densidade1 < densidade2){
+        printf("A densidade populacional da carta 2 é maior!\n");
+    } else {
+        printf("Empate!\n");
+    }
+    if (pibper1 > pibper2){
+        printf("O PIB per capita da carta 1 é maior!\n");
+    } else if (pibper1 < pibper2){
+        printf("O PIB per capita da carta 2 é maior!\n");
+    } else {
+        printf("Empate!\n");
+    }
+    if (superpoder1 > superpoder2){
+        printf("A carta 1 é mais poderosa!\n");
+    } else if (superpoder1 < superpoder2){
+        printf("A carta 2 é mais poderosa!\n");
+    } else {
+        printf("Empate!\n");
+    }
     
     return 0;
 
